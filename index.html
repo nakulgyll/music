@@ -26,6 +26,21 @@
 	<body>
 		
 		<div class = "top-container">
+		
+			<button class="open-button" onclick="openForm()">Your Favourite Song</button>
+
+				<div class="form-popup" id="myForm">
+				
+					<form action="/action_page.php" class="form-container">
+						<p class = "frmtxt">Send us your  favourite song...</p>
+						<label for="email"><b>Email</b></label>
+						<input type="text" placeholder="Enter Email" name="email" required>
+						<label for="psw"><b>Link/Name </b></label>
+						<input type="text" placeholder="" name="psw" required>
+						<button type="submit" class="btn">Submit</button>
+						<button type="button" class="btn cancel" onclick="closeForm()">Close</button>
+					</form>
+				</div>
 			<section id="title">
 		
 				<div class = "container-fluid">
@@ -154,10 +169,10 @@
 			<section id="features">
 				<div class = "row">
 					<div class = "feature-box col-lg-3">
-						<div class="card" style="width: 18rem;">
+						<div class="card" style="width: 18rem; border-left: 5px solid #cc0e74; background-color: #f3bad6">
 							<img src="wp7033428-taylor-swift-folklore-wallpapers.jpg" class="card-img-top" alt="...">
 							<div class="card-body">
-								<h4 class="card-title"><strong>Folklore</strong></h4>
+								<h4 class="card-title"><strong>Cardigan</strong></h4>
 								
 							</div>
 							<ul class="list-group list-group-flush">
@@ -172,7 +187,7 @@
 						</div>
 					</div>
 					<div class = "feature-box col-lg-3">
-						<div class="card" style="width: 18rem;">
+						<div class="card" style="width: 18rem; border-left: 5px solid #cc0e74; background-color: #f3bad6">
 							<img src="wp5677413-halsey-you-should-be-sad-wallpapers.jpg" class="card-img-top" alt="...">
 							<div class="card-body">
 								<h5 class="card-title"><strong>You Should Be Sad</strong></h5>
@@ -190,7 +205,7 @@
 						</div>
 					</div>
 					<div class = "feature-box col-lg-3">
-							<div class="card" style="width: 18rem;">
+							<div class="card" style="width: 18rem;border-left: 5px solid #cc0e74; background-color: #f3bad6">
 							<img src="wp2446285-alan-walker-faded-wallpapers.jpg" class="card-img-top" alt="...">
 							<div class="card-body">
 								<h5 class="card-title"><strong>Faded</strong></h5>
@@ -208,7 +223,7 @@
 						</div>
 					</div>
 					<div class = "feature-box col-lg-3">
-						<div class="card" style="width: 18rem;">
+						<div class="card" style="width: 18rem; border-left: 5px solid #cc0e74; background-color: #f3bad6">
 							<img src="wp4521086-friends-marshmello-and-anne-marie-wallpapers.jpg" class="card-img-top" alt="...">
 							<div class="card-body">
 								<h5 class="card-title"><strong>FRIENDS</strong></h5>
@@ -235,7 +250,7 @@
 					<br><center><h1>New Release<h1><center><br>
 				</div>
 				</section>
-				<br><br><br>
+				<br>
 			
 				<section id = "test">
 				<div class = "fea"  >
@@ -244,122 +259,68 @@
 					<div class = "row">
 						<div class = "feature-box col-lg-4">
 							
-							<a href = ""><img src="1056239.jpg" alt="" width="450" height="auto">
+							<video width="450" height="auto" controls style = "border-left: 6px solid #cc0e74; ">
+								<source src="gone.mp4" type="video/mp4">
+							</video>
 							
-							</a>
+							
 						</div>
-						<div class = "feature-box col-lg-8">
+						<div class = "feature-box col-lg-8" style = "border-right: 6px solid #cc0e74; ">
 							 <p style="text-align:left;"><strong>Details: </strong><br>это текст-"рыба", часто используемый в печати и вэб-дизайне. Lorem Ipsum является стандартной "рыбой" для текстов на латинице с начала XVI века. В то время некий безымянный печатник создал большую коллекцию размеров и форм шрифтов, используя Lorem Ipsum для распечатки образцов. Lorem Ipsum не только успешно пережил без заметных изменений пять веков, но и перешагнул в электронный дизайн. Его популяризации в новое время послужили публикация листов Letraset с образцами Lorem Ipsum в 60-х годах и, в более недавнее время, программы электронной вёрстки типа Aldus PageMaker, в шаблонах которых используется Lorem Ipsum.</p>
-				
 						</div>
-						
+					</div>
+				</section><br><br>
+				<section id = "test">
+				<div class = "fea"  >
+					<div class = "row">
+						<div class = "feature-box col-lg-4" >
+							
+							<video width="450" height="auto" controls style = "border-left: 6px solid #cc0e74; ">
+								<source src="dusk.mp4" type="video/mp4"	 >
+							</video>					
+						</div>
+						<div class = "feature-box col-lg-8" style = "border-right: 6px solid #cc0e74;">
+							 <p style="text-align:left;"><strong>Details: </strong><br>это текст-"рыба", часто используемый в печати и вэб-дизайне. Lorem Ipsum является стандартной "рыбой" для текстов на латинице с начала XVI века. В то время некий безымянный печатник создал большую коллекцию размеров и форм шрифтов, используя Lorem Ipsum для распечатки образцов. Lorem Ipsum не только успешно пережил без заметных изменений пять веков, но и перешагнул в электронный дизайн. Его популяризации в новое время послужили публикация листов Letraset с образцами Lorem Ipsum в 60-х годах и, в более недавнее время, программы электронной вёрстки типа Aldus PageMaker, в шаблонах которых используется Lorem Ipsum.</p>
+						</div>
 					</div>
 				</section>
-			
-			</section>
-			
+			</section><br><br>
 			<section id="features">
 				<section id = "test">
 				<div class = "fea">
-				
-			
 					<div  class = "row">
 						<div class = "feature-box col-lg-4">
-							
-							<a href = ""><img src="1056239.jpg" alt="" width="450" height="auto">
-							
-							</a>
+							<video width="450" height="auto" controls style = "border-left: 6px solid #cc0e74; ">
+								<source src="10000.mp4" type="video/mp4">
+							</video>
 						</div>
-						<div class = "feature-box col-lg-8" >
+						<div class = "feature-box col-lg-8" style = "border-right: 6px solid #cc0e74; ">
 							 <p style="text-align:left;"><strong>Details: </strong><br>это текст-"рыба", часто используемый в печати и вэб-дизайне. Lorem Ipsum является стандартной "рыбой" для текстов на латинице с начала XVI века. В то время некий безымянный печатник создал большую коллекцию размеров и форм шрифтов, используя Lorem Ipsum для распечатки образцов. Lorem Ipsum не только успешно пережил без заметных изменений пять веков, но и перешагнул в электронный дизайн. Его популяризации в новое время послужили публикация листов Letraset с образцами Lorem Ipsum в 60-х годах и, в более недавнее время, программы электронной вёрстки типа Aldus PageMaker, в шаблонах которых используется Lorem Ipsum.</p>
 				
 						</div>
-						
 					</div>
 					</div>
 				</section>
-			
-			</section>
-			
+			</section><br><br>
 			<section id="features">
 				<section id = "test">
 				<div class = "fea"  >
-				
-			
 					<div class = "row">
 						<div class = "feature-box col-lg-4">
-							
-							<a href = ""><img src="1056239.jpg" alt="" width="450" height="auto">
-							
-							</a>
+							<video width="450" height="auto" controls style = "border-left: 6px solid #cc0e74; ">
+								<source src="girlslikeyou.mp4" type="video/mp4">
+							</video>
 						</div>
-						<div class = "feature-box col-lg-8">
+						<div class = "feature-box col-lg-8" style = "border-right: 6px solid #cc0e74; ">
 							 <p style="text-align:left;"><strong>Details: </strong><br>это текст-"рыба", часто используемый в печати и вэб-дизайне. Lorem Ipsum является стандартной "рыбой" для текстов на латинице с начала XVI века. В то время некий безымянный печатник создал большую коллекцию размеров и форм шрифтов, используя Lorem Ipsum для распечатки образцов. Lorem Ipsum не только успешно пережил без заметных изменений пять веков, но и перешагнул в электронный дизайн. Его популяризации в новое время послужили публикация листов Letraset с образцами Lorem Ipsum в 60-х годах и, в более недавнее время, программы электронной вёрстки типа Aldus PageMaker, в шаблонах которых используется Lorem Ipsum.</p>
 				
 						</div>
 						
 					</div>
-				</section>
-			
+				</section>	
 			</section>
-			
-			<section id="features">
-				<section id = "test">
-				<div class = "fea"  >
-				
-			
-					<div class = "row">
-						<div class = "feature-box col-lg-4">
-							
-							<a href = ""><img src="1056239.jpg" alt="" width="450" height="auto">
-							
-							</a>
-						</div>
-						<div class = "feature-box col-lg-8">
-							 <p style="text-align:left;"><strong>Details: </strong><br>это текст-"рыба", часто используемый в печати и вэб-дизайне. Lorem Ipsum является стандартной "рыбой" для текстов на латинице с начала XVI века. В то время некий безымянный печатник создал большую коллекцию размеров и форм шрифтов, используя Lorem Ipsum для распечатки образцов. Lorem Ipsum не только успешно пережил без заметных изменений пять веков, но и перешагнул в электронный дизайн. Его популяризации в новое время послужили публикация листов Letraset с образцами Lorem Ipsum в 60-х годах и, в более недавнее время, программы электронной вёрстки типа Aldus PageMaker, в шаблонах которых используется Lorem Ipsum.</p>
-				
-						</div>
-						
-					</div>
-				</section>
-			
 			</section>
-			
-			<section id="features">
-				<section id = "test">
-				<div class = "fea"  >
-				
-			
-					<div class = "row">
-						<div class = "feature-box col-lg-4">
-							
-							<a href = ""><img src="1056239.jpg" alt="" width="450" height="auto">
-							
-							</a>
-						</div>
-						<div class = "feature-box col-lg-8">
-							 <p style="text-align:left;"><strong>Details: </strong><br>это текст-"рыба", часто используемый в печати и вэб-дизайне. Lorem Ipsum является стандартной "рыбой" для текстов на латинице с начала XVI века. В то время некий безымянный печатник создал большую коллекцию размеров и форм шрифтов, используя Lorem Ipsum для распечатки образцов. Lorem Ipsum не только успешно пережил без заметных изменений пять веков, но и перешагнул в электронный дизайн. Его популяризации в новое время послужили публикация листов Letraset с образцами Lorem Ipsum в 60-х годах и, в более недавнее время, программы электронной вёрстки типа Aldus PageMaker, в шаблонах которых используется Lorem Ipsum.</p>
-				
-						</div>
-						
-					</div>
-				</section>
-			
-			</section>
-			</div>
-				
-				
-				
-			
-		
-			
-			
-			
-			
-			
-			
-			
-				
+			</div>		
 			<div class="bottom-container">
 				
 				<a class="footer-link" href="https://instagram.com/awsome_release?igshid=1gib9mv8ralx5">Instagram</a>
@@ -368,5 +329,16 @@
 				<p class = "copyright">© 2020 MusicalBeeZ.</p>
 		</div>
 		
+		
+		<script>
+			function openForm() {
+				document.getElementById("myForm").style.display = "block";
+			}
+
+			function closeForm() {
+				document.getElementById("myForm").style.display = "none";
+			}
+		</script>
+
 	</body>
 </html>
